@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2 Html, CSS</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;                 
+        }       
+        
+        /* header  */
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgb(255, 102, 0);
+            color: white;
+        }
+
+        ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        header {
+            position: relative;
+            
+        }
+        header img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        /* body  */
+        /* main  */
+        
+        .main-div {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center;
+          color: white;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: rgb(255, 102, 0);
+            color: white;
+            border: none;           
+            border-radius: 50px;
+            padding: 10px 20px;
+            font-size: 12px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        /* FAQ section */
+        
+        section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-wrap: wrap;
+            overflow: hidden;
+            background-color: gray;
+            margin-top: 0;
+            
+        }
+        section h2 {
+            margin-top: 20px;
+        }
+
+        section p {
+            margin: 0;
+            padding: 20px;
+            
+        }
+        
+        
+        .arrow {
+            position: relative;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;        
+            background-color: rgb(255, 102, 0);
+            border: 1px solid gray;
+            margin: 20px auto;
+            
+        }
+
+        .arrow::before, .arrow::after {
+            position: absolute;
+            content: ""; 
+            width: 100px;
+            height: 2px;
+            top: 50%;
+            transform: translateY(-50%); 
+            color: rgb(255, 102, 0);
+            font-weight: bold;         
+        }
+
+       .arrow::before {
+            left: -100px;
+            background-color: rgb(255, 102, 0);
+        }
+        .arrow::after {
+            right: -100px;
+            background-color: rgb(255, 102, 0);
+        }
+        
+        dl {
+            margin-bottom: 50px;
+        }
+
+        dt {
+            background-color: rgb(255, 102, 0);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;           
+            margin-bottom: 0;
+            padding: 20px;
+            
+        }
+
+        dd {
+            display: flex;
+            align-items: center;
+            justify-content: center;              
+            height: 60px;
+            margin: 0;
+            margin-bottom: 10px;
+            padding: 20px;
+            background-color: white;
+            
+        } 
+
+
+        .paragraph {
+            margin: 0px 50px;
+        }
+        
+        /* invoice  */
+        .invoice {
+            position: relative;
+        }
+
+        .invoice h2 {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 30px;
+        }       
+
+        table {           
+            margin: 0 auto;
+            margin-top: 20px;
+            border-radius: 5px;
+            overflow: hidden;
+            border: 1px solid gray;            
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white; 
+            width: 500px;
+            margin-bottom: 20px;          
+        }
+        th {
+            background-color: gray;
+            color: white;
+            padding: 10px;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        tr:nth-child(4) {
+            background-color: gray; 
+            color: black; 
+            font-weight: bold; 
+        }
+
+        td:last-child {
+            background-color: white;            
+        }
+        
+        tr:nth-child(5) {
+            background-color: gray; 
+            color: black; 
+            font-weight: bold;
+        }
+
+        tr:last-child {
+            background-color: white; 
+            color: black; 
+             
+        }
+
+        tr:nth-child(5) td:nth-last-child(2) {
+            background-color: white; 
+            color: black; 
+            
+        }
+
+        tr:nth-child(6) {
+            background-color: gray; 
+            color: black; 
+            font-weight: bold; 
+        }
+                
+        
+        /* footer  */
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+            bottom: 0;
+            margin: 0;
+            
+        }
+
+        footer p::before {
+            content: "\00A9";
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+            margin-right: 5px;           
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+
+        <nav>
+            <a href="">LOGO</a>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <a href="tel:+959234555">+234555</a>
+        </nav>
+
+        <img src="./backgoround_img.jpg" alt="a picture" width="100%">
+        
+    </header>
+    <main>
+        <div class="main-div">
+            <h1>Clean and Flexible Business Template</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque distinctio ipsam non quaerat incidunt maiores? Sequi placeat eius, reprehenderit ullam, nam accusantium numquam deleniti exercitationem ab quisquam odio quaerat necessitatibus.</p>
+            <button><a href="">Find Out More</a></button>
+        </div>
+
+        <section>
+            <div>
+                <h2>FAQ SECTION</h2>
+                <div class="arrow"></div>
+                <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, quos Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, fugiat.Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </div>  
+            
+            <div>
+                <dl>
+                    <dt>FAQ <span>+</span></dt>
+                    
+                    <dd>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est alias laborum reiciendis explicabo fugiat eligendi magnam vero quis libero iste.
+                    </dd>
+    
+                    <dt>FAQ <span>+</span></dt>
+                    <dd>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est alias laborum reiciendis explicabo fugiat eligendi magnam vero quis libero iste.
+                    </dd>
+    
+                    <dt>FAQ <span>+</span></dt>
+                    <dd>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est alias laborum reiciendis explicabo fugiat eligendi magnam vero quis libero iste.
+                    </dd>
+    
+                    <dt>FAQ <span>+</span></dt>
+                    <dd>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Est alias laborum reiciendis explicabo fugiat eligendi magnam vero quis libero iste.
+                    </dd>
+    
+                </dl>
+            </div>
+            
+                  
+        </section>
+        <div class="invoice">
+            <div class="">
+                <h2>INVOICE</h2>
+                <div class="arrow"></div>
+                
+                <table border="1" style="width:500px; border-collapse: collapse;">
+                    <thead>
+                        <tr>
+                            <th>Item/Desc.</th>
+                            <th>Qty.</th>
+                            <th>@</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Principles (Box)</td>
+                            <td>100</td>
+                            <td>1.15</td>
+                            <td>115.00</td>
+                        </tr>
+                        <tr>
+                            <td>Paper (Case)</td>
+                            <td>10</td>
+                            <td>45.99</td>
+                            <td>459.90</td>
+                        </tr>
+                        <tr>
+                            <td>Wastepaper Baskets</td>
+                            <td>2</td>
+                            <td>17.99</td>
+                            <td>35.98</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Subtotal</td>
+                            <td>610.88</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Tax</td>
+                            <td>7%</td>
+                            <td>42.76</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Total</td>
+                            <td>653.64</td>
+                        </tr>
+                    </tbody>
+                    
+                </table>
+    
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <p>2024 All right reserved.</p>
+    </footer>
+</body>
+</html>
