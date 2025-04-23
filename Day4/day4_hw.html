@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 Assignment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>DASHBOARD</h1>
+            <ul>
+                <li><a href=""><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-bell" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-user" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       <div class="container-fluid">
+        <div class="left-container">
+        
+          <ul class="first-item">
+              <li><a href=""> <i class="fa fa-table" aria-hidden="true"></i>Layout</a>
+              </li>
+              <li><a href=""><i class="fa fa-table" aria-hidden="true"></i>
+                  Report Table</a>
+              </li>
+              <li><a href=""><i class="fa fa-calculator" aria-hidden="true"></i>Chart</a></li>
+              <li><a href=""><i class="fa fa-calculator" aria-hidden="true"></i>Form</a></li>
+              <li><a href=""><i class="fa fa-calculator" aria-hidden="true"></i>Logs</a></li>
+              
+          </ul>
+          <ul class="second-item">
+              <li>
+                  <a href=""> <i class="fa fa-table" aria-hidden="true"></i>Layout</a></li>
+              <li><a href=""><i class="fa fa-table" aria-hidden="true"></i>
+                  Report Table</a></li>
+              <li><a href=""><i class="fa fa-calculator" aria-hidden="true"></i>Chart</a></li>
+              <li><a href=""><i class="fa fa-calculator" aria-hidden="true"></i>Form</a></li>
+              <li><a href=""><i class="fa fa-calculator" aria-hidden="true"></i>Logs</a></li>
+          </ul>
+      </div>
+      <div class="right-container">
+        <h2>Register Form</h2>
+        <div class="form-container">
+          <form action="">
+            <div class="form-group">
+              <label for="username">Name</label>
+              <input type="text" name="username" id="username" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required />
+            </div>
+            <div class="form-group">
+              <label for="dob">Date Of Birth</label>
+              <input type="datetime-local" name="dob" id="dob" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" name="phone" id="phone" required />
+            </div>
+            <div class="form-group radio-group">
+              <label for="">Gender</label>
+              <div>
+                <input
+                  type="radio"
+                  name="gender"
+                  value="male"
+                  id="male"
+                  checked
+                />
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="female" id="female" />
+                <label for="female">Female</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Favourite Programming Language</label>
+              <div class="checkbox-group">
+                <input
+                  type="checkbox"
+                  name="interests"
+                  value="html"
+                  id="html"
+                />
+                <label for="html">HTML</label>
+
+                <input type="checkbox" name="interests" value="css" id="css" />
+                <label for="css">CSS</label>
+
+                <input type="checkbox" name="interests" value="js" id="js" />
+                <label for="js">JavaScript</label>
+
+                <input
+                  type="checkbox"
+                  name="interests"
+                  value="react"
+                  id="react"
+                />
+                <label for="react">React</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="color">Choose a color:</label>
+              <select name="color" id="color">
+                <option value="red" selected>Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="enter your message"
+              ></textarea>
+            </div>
+
+            <div class="btn-group">
+              <button type="submit" class="btn">Submit</button>
+              <button type="reset" class="btn btn-two">Reset</button>
+            </div>
+        </form>
+        </div>
+        
+
+    </div> 
+  
+       </div>
+            
+
+      
+            
+            
+        
+    </main>
+    <footer>
+        <p>Copyright &copy; 2024</p>
+    </footer>
+</body>
+</html>
