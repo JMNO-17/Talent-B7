@@ -464,7 +464,7 @@ footer {
 
 }
 
-/* @media screen and (min-width: 576px) and (max-width: 772px) { */
+/* @media screen and (min-width: 576px) and (max-width: 772px) { 
     .card-item {
         width: 100%;
     }
