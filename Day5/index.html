@@ -38,7 +38,7 @@
     </div>
 
     <main>
-        <section>
+        <section class="first-section">
             <div class="flex-container">
                 <div class="flex-item left-project">
                     <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h3>
@@ -56,8 +56,6 @@
                 <div class="cmn-ttl">
                     <h4>Lorem ipsum dolor sit amet.</h4>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem illum debitis earum ratione. Ipsam maiores, ab corporis sint tempora odit magni esse deserunt voluptatum, adipisci obcaecati? Officiis veritatis expedita recusandae?</p>
-
-
                 </div>
                 
                 <div class="flex-container card-container">
@@ -71,37 +69,37 @@
                     </div>
                     <div class="card-item">
                         <span class="card-icon">
-                            <img src="./assets/images/icon/icon_mind.png" alt="">
+                            <img src="./assets/images/icon/icon_break.png" alt"">
                         </span>
-                        <h6>Peace of Mind</h6>
+                        <h6>Coffee Breaks</h6>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nulla asperiores quia, quibusdam, veritatis alias deleniti consectetur non harum, animi temporibus maxime quis soluta! Quae veritatis ad ipsum atque nemo.</p>
                     </div>
                     <div class="card-item">
                         <span class="card-icon">
-                            <img src="./assets/images/icon/icon_mind.png" alt="">
+                            <img src="./assets/images/icon/icon_reward.png" alt="">
                         </span>
-                        <h6>Peace of Mind</h6>
+                        <h6>Rewards</h6>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nulla asperiores quia, quibusdam, veritatis alias deleniti consectetur non harum, animi temporibus maxime quis soluta! Quae veritatis ad ipsum atque nemo.</p>
                     </div>
                     <div class="card-item">
                         <span class="card-icon">
-                            <img src="./assets/images/icon/icon_mind.png" alt="">
+                            <img src="./assets/images/icon/icon_delivery.png" alt"">
                         </span>
-                        <h6>Peace of Mind</h6>
+                        <h6>Delivery</h6>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nulla asperiores quia, quibusdam, veritatis alias deleniti consectetur non harum, animi temporibus maxime quis soluta! Quae veritatis ad ipsum atque nemo.</p>
                     </div>
                     <div class="card-item">
                         <span class="card-icon">
-                            <img src="./assets/images/icon/icon_mind.png" alt="">
+                            <img src="./assets/images/icon/icon_inbox.png" alt="">
                         </span>
-                        <h6>Peace of Mind</h6>
+                        <h6>Inbox</h6>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nulla asperiores quia, quibusdam, veritatis alias deleniti consectetur non harum, animi temporibus maxime quis soluta! Quae veritatis ad ipsum atque nemo.</p>
                     </div>
                     <div class="card-item">
                         <span class="card-icon">
-                            <img src="./assets/images/icon/icon_mind.png" alt="">
+                            <img src="./assets/images/icon/icon_setting.png" alt="">
                         </span>
-                        <h6>Peace of Mind</h6>
+                        <h6>Settings</h6>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nulla asperiores quia, quibusdam, veritatis alias deleniti consectetur non harum, animi temporibus maxime quis soluta! Quae veritatis ad ipsum atque nemo.</p>
                     </div>
                 </div>
@@ -116,12 +114,20 @@
                 <img src="./assets/images/case_bg.png" alt="" class="banner-image">
                 <div class="layer"></div>
                 <div class="banner-txt">
-                    <img src="./assets/images/icon/icon_play.png" alt="">
+                    <img src="./assets/images/icon/icon_play.png" alt="" id="playBtn">
                     <h4>Our Case Stuides</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nihil id minus odit repellat quis rerum, iure asperiores cumque unde ipsam quas necessitatibus. </p>                  
                 </div>       
             </div>
         </section>
+
+        <div class="popup-container" id="openCard">
+            <div class="card-content">
+              <h3>Case Study</h3>
+              <p>This is the Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti harum ex iure animi ab rem nisi aperiam? Voluptatum culpa eaque iste eligendi sed qui expedita eos dolore, amet provident animi corporis. Praesentium, et dolorem? Perspiciatis, neque voluptas dolor quia aperiam impedit, repellendus, alias quam voluptate similique est beatae earum quasi!</p>
+              <button class="close-btn" onclick="closeCard()">Close</button>
+            </div>
+        </div>
         
         <section>
             <div class="featured-project">
@@ -131,7 +137,7 @@
                 </div>
 
 
-                <div class="flex-container">
+                <div class="flex-container bg-one">
       
                     <div class="flex-item left-project">
                       <h3>Our Featured Project</h3>
@@ -144,7 +150,8 @@
                     </div>
               
                 </div>
-                <div class="flex-container">
+
+                <div class="flex-container bg-two">
                     <div class="flex-item right-project">
                         <img src="./assets/images/img03.png" alt="">
                     </div>
@@ -152,12 +159,10 @@
                       <h3>Our Featured Project</h3>
                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis.</p>
                       <a href="#" class="cmn-btn">VIEW OUR PROJECTS</a>
-                    </div>
-              
-                    
-              
+                    </div>            
                 </div>
-                <div class="flex-container">
+
+                <div class="flex-container bg-three">
           
                     <div class="flex-item left-project">
                       <h3>Our Featured Project</h3>
@@ -168,8 +173,8 @@
                     <div class="flex-item right-project">
                       <img src="./assets/images/img04.png" alt="">
                     </div>
-              
                 </div>
+
             </div>
             
            
@@ -193,6 +198,17 @@
            
             
         });
+
+        // Open Card
+        document.getElementById('playBtn').addEventListener('click', function() {
+        document.getElementById('openCard').style.display = 'flex';
+        });
+
+        // Close Card
+        function closeCard() {
+            document.getElementById('openCard').style.display = 'none';
+        }
+
        
 
     </script>
