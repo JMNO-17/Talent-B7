@@ -188,7 +188,9 @@ nav ul {
 .product-sec {
     background-color: var(--gray);
 }
-
+.container {
+    padding-bottom: 20px;
+}
 .cmn-ttl {
     text-align: center;
     margin-bottom: 24px;
